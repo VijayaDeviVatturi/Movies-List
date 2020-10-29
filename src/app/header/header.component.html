@@ -1,0 +1,15 @@
+<header class="headerstyle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Movies List</h4>
+      </div>
+      <div class="col-md-6  navbutton tab">
+        <div class="flex sd tablinks">
+          <button type="radio" [ngClass]="{'active':tab == 1}" routerLink="latest" (click)="updateTab(1)">TOP RATED MOVIES</button>
+          <button type="radio" [ngClass]="{'active':tab == 2}" routerLink="upcoming" (click)="updateTab(2)">UPCOMING MOVIES</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+</header>

@@ -1,0 +1,22 @@
+<section>
+  <div class="container">
+  <h2 *ngIf='!moviesList'>Loading...</h2>
+    <div class="row" *ngIf='moviesList'>
+      <div *ngFor="let movie of moviesList;" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card cardpostion">
+          <i class="fa fa-camera-retro"></i>
+          <span class="row"><img src="https://image.tmdb.org/t/p/w500{{movie.backdrop_path}}" class="col-12"></span>
+          <div class="col-12" style="background-color: rgb(23, 21, 68);">
+            <h4 class="bottomtext">{{movie.title}}</h4>
+            <div class="row bottomfont">
+              <span class="col"><img src="assets/calender_icon.png"
+                  style="width:10px;height: 10px;margin-bottom:1%;margin-right:2%;">{{movie.release_date}}</span>
+              <span class="col-4"><img src="assets/calender_icon.png"
+                  style="width:10px;height: 10px;margin-bottom:2%;margin-right:2%;">{{movie.vote_average}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

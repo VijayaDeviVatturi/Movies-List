@@ -1,0 +1,50 @@
+.col-1-4 {
+    width: 25%;
+  }
+  .moviesstyle{
+      padding-top: 2%;
+      padding-bottom:2%;
+  }
+  .cardpostion{
+      margin-right: 1%;
+      margin-bottom: 1%;
+      margin-top: 10%;
+  }
+  .bottomfont{
+    font-size: small;
+    /* background-color: gray; */
+    color: white;
+  }
+  .bottomtext{
+    /* line-height: 2.5ex;  */
+    height: 2.5ex; 
+    overflow: hidden;
+    /* background-color: gray; */
+    color: white;
+    /* text-overflow: ellipsis; */
+  }
+  .imagestyle{
+    padding-left: 5% ;
+    padding-right: 5%;
+  }
+
+  input + label {             /* box with rounded corner */
+  border: 1px solid #999;
+  background: #EEE;
+  padding: 4px 12px;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  top: 1px;
+}
+input:checked + label {     /* white background for selected tab */
+  background: #FFF;
+  border-bottom: 1px solid transparent;
+}
+input ~ .tab {          /* grey line between tab and contents */
+  border-top: 1px solid #999;
+  padding: 12px;
+}
+h2{
+  text-align: center;
+  padding-top: 15%;
+}
